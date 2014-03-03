@@ -16,3 +16,7 @@ This app runs a Daemon process.
 To run it with Foreman do:
 
     bundle exec foreman start
+
+To run it without Foreman do:
+
+    bundle exec dotenv ruby daemon.rb run
