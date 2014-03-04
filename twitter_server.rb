@@ -4,7 +4,6 @@ require_relative 'little_printer'
 @client = LittleTwitter.new.client
 @since_id = nil
 @search_criteria = ENV["TWITTER_SEARCH_CRITERIA"]
-puts @search_criteria
 
 loop do
   options = {:result_type => "recent"}
