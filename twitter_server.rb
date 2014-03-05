@@ -14,7 +14,7 @@ loop do
   tweets.each do |tweet|
     payload = "From: #{tweet.user.username}<br/>Tweet: #{tweet.text}<br/>"
     payload << "<img src='#{tweet.media.first.media_uri}' class='dither' width='380'/>" if tweet.media?
-    @little_printer.message(payload)`
+    @little_printer.message(payload)
   end
 
   sleep 30
